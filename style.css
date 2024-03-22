@@ -1,0 +1,29 @@
+body {
+    background-color: antiquewhite;
+}
+
+@media screen and (min-width:500px) and (max-width:960px) {
+
+    body {
+        background-color: darkcyan;
+        color: antiquewhite
+    }
+
+}
+
+/* Difference between AND and OR in media queries */ 
+/*AND &&
+OR ]] */
+
+/* If some users prefer dark mode in browser */
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+        color:antiquewhite;
+    }
+  }
+
+  /* Many times we depend on hover to style an element for either displaying additional information or simply show change of state, but there are cases where hover is not an option like in a smartphone or hover is not fully functioning. */
+  @media (hover: none) {
+    /* styles */
+  }
